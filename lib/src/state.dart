@@ -68,7 +68,7 @@ abstract class C2State<T> extends State<ChipsChoice<T>> {
   void initState() {
     super.initState();
 
-    WidgetsBinding.instance.addPostFrameCallback((_) {
+    WidgetsBinding.instance!.addPostFrameCallback((_) {
       initController();
       initSelectedKey();
       loadChoiceItems(ensureSelectedVisibility: true);
